@@ -1,0 +1,22 @@
+1.再网站注册：https://github.com/
+环境变量
+配置环境变量 右键计算机-属性-高级系统设置-环境变量-path 安装地址
+进入界面输入git --version查看版本
+2.配置用户名和邮箱
+ git config --global user.name 13182239881
+ git config --global user.email 2086904420@qq.com
+任意位置右键点击 git bash 跳出界面后输入
+查看是否配置成功
+进入C:\Users\Administrator该目录查看.gitconfig文件
+、任意位置右键点击 git bash 跳出界面后输入
+git config --list
+生成秘钥：ssh-keygen -t rsa
+命令执行后，连敲3次回车键，执行完后到系统盘users目录(win: C:\Users\86131\.ssh\），查看生成的ssh文件夹
+验证配置是否成功
+在git bash输入命令 ssh -T git@github.com ，第一次配置会让你输入yes/no，输入yes。
+配置公钥：
+1、打开本地文件 C:\Users\Administrator\.ssh\id_rsa.pub 文件，复制公钥内容
+2、登录 github官网，打开自己头像，并点击【设置】
+3、点击【SSH and GPG keys】
+4、点击【New SSH key】
+5、设置一个名称，然后将步骤一中拷贝的公钥粘贴进来，保存
